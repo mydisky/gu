@@ -219,6 +219,19 @@ async def is_droplink_url(url):
     domain = url if "droplink.co" in domain else False
     return domain
 
+async def broadcast_admins(c: Client, Message, sender=False):
+    admins = ADMINS[:]
+    
+    if sender:
+        admins.remove(sender)
+
+    for i in admins:
+        try:
+            await c.send_message(i, Message)
+        except PeerIdInvalid:
+            logging.info(f"{i} have not yet started the bot")
+    return
+
 
 async def broadcast_messages(user_id, message):
     try:
