@@ -13,7 +13,7 @@ Ex: `/batch -100xxx`
 
 START_MESSAGE = '''Hello, {}
 
-I'm a ATGLINKS Shortener Bot short Using your API. 
+I'm a DTGLINKS.IN Shortener Bot short Using your API. 
 
 Just Send me Any Post with Mdisk or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
 
@@ -25,7 +25,7 @@ Current Method Selected: **{}**
 
 
 HELP_MESSAGE = '''
-Hey! My name is {firstname}. I am a ATGLINKS Shortner bot make your Work Easy and Help you to Earn more
+Hey! My name is {firstname}. I am a DTGLINKS.IN Shortner bot make your Work Easy and Help you to Earn more
 
 Helpful commands:
 
@@ -68,7 +68,7 @@ Current Method: {method}
     
 Methods Available:
 
-~ `mdlink` - Change all the links of the post to your MDisk account first and then short to linkbnao.com link.
+~ `mdlink` - Change all the links of the post to your MDisk account first and then short to DTGLINKS.IN link.
 
 ~ `shortener` - Short all the links of the post to linkbnao.com link directly.
 
@@ -160,9 +160,9 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 USER_ABOUT_MESSAGE = """
-- Shortener Website: {base_site}
+- Shortener Website: DTGLINKS.IN
 - Method: {method}
-- {base_site} API: {shortener_api}
+- DTGLINKS.IN API: {shortener_api}
 - Mdisk API: {mdisk_api}
 - Username: @{username}
 - Header Text: 
@@ -188,11 +188,9 @@ Current Mdisk API: `{}`"""
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
 `/shortener_api [api]`
             
-Ex: `/shortener_api acccdf4778c9453ea9f193655bde0af2af01cb9e`
+Ex: `/shortener_api 9e6082cd457037f01be6631e803c60a1bab73a73`
 
 Current Website: {base_site}
-
-To change your Shortener Website: /base_site
 
 Current Shortener API: `{shortener_api}`"""
 
