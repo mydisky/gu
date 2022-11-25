@@ -1,0 +1,1 @@
+# DTG-linkszad-bot
