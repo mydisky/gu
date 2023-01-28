@@ -144,6 +144,7 @@ METHOD_REPLY_MARKUP = InlineKeyboardMarkup([
     [
         InlineKeyboardButton('MDLINK', callback_data=f'change_method#mdlink'),
         InlineKeyboardButton('Shortener', callback_data='change_method#shortener'),
+        InlineKeyboardButton("Mdisk", callback_data="change_method#mdisk"),
     ],
         [
         InlineKeyboardButton('Back', callback_data=f'help_command'),
