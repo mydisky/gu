@@ -13,7 +13,7 @@ Ex: `/batch -100xxx`
 
 START_MESSAGE = '''Hello, {}
 
-I'm a DTGLINKS.IN Shortener Bot short Using your API. 
+I'm a nanolinks.in Shortener Bot short Using your API. 
 
 Just Send me Any Post with Mdisk or Other Links. I will Convert Those Links Using Your API and Send them Back To You. I work in Channels too. 
 
@@ -32,10 +32,10 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /batch -100xxx: To short or convert all posts of your channel
-- /shortener_api
-- /mdisk_api
-- /header
-- /footer
+- /shortener_api : add your nanolinks api
+- /mdisk_api : add mdisk api
+- /header : add header
+- /footer : add footer
 - /username
 - /banner_image
 - /me
@@ -70,7 +70,7 @@ Methods Available:
 
 ~ `mdlink` - Change all the links of the post to your MDisk account first and then short to DTGLINKS.IN link.
 
-~ `shortener` - Short all the links of the post to linkbnao.com link directly.
+~ `shortener` - Short all the links of the post to nanolinks.in link directly.
 
 To change method, choose it from the following options:
 """
@@ -83,16 +83,12 @@ Ex: https://t.me/example | Example"""
 
 
 ADMINS_MESSAGE = """
-List of Admins who has access to this Bot
-
-{admin_list}
+Sorry only work for admin
 """
 
 
 CHANNELS_LIST_MESSAGE = """
-List of channels that have access to this Bot:
-
-{channels}"""
+Sorry only work for admin"""
 
 
 HELP_REPLY_MARKUP = InlineKeyboardMarkup([
@@ -178,7 +174,7 @@ USER_ABOUT_MESSAGE = """
 
 MDISK_API_MESSAGE = """To add or update your Mdisk API, \n`/mdisk_api mdisk_api`
             
-Ex: `/mdisk_api 6LZq851sXoPHugiKQq`
+Ex: `/mdisk_api 6jZqf51sXoPtugiKQq`
             
 Others Mdisk Links will be automatically changed to the API of this Mdisk account
 
@@ -189,7 +185,7 @@ Current Mdisk API: `{}`"""
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
 `/shortener_api [api]`
             
-Ex: `/shortener_api 9e6082cd457037f01be6631e803c60a1bab73a73`
+Ex: `/shortener_api 9e6082cd45fg37f01bh6631e8j3c60a1bab73a73`
 
 Current Website: {base_site}
 
