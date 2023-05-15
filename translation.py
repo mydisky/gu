@@ -25,7 +25,18 @@ Current Method Selected: **{}**
 
 
 HELP_MESSAGE = '''
-Hey! My name is {firstname}. I am a DTGLINKS.IN Shortner bot make your Work Easy and Help you to Earn more
+Hey! My name is {firstname}. I am a DTGLINKS.IN Shortner bot make your Work Easy and Help you to Earn more 💰.
+
+I have a ton of handy features to help you out, such as:
+
+- [Hyperlink](https://t.me/{username}) support 🔗
+- Button conversion support 🔘
+- Domain inclusion and exclusion options 🌐
+- Header and footer text support 📝
+- Replace username function 📎
+- Banner image support 🖼️
+- Batch conversion for channel admins only 📊
+- Channel support for admins only 📢
 
 Helpful commands:
 
@@ -50,6 +61,13 @@ Below are some features I provide'''
 
 ABOUT_TEXT = """
 **My Details:**
+
+`🤖 Name:` ** {} **
+`✏️ LANGUAGE` : [Python 3](https://www.python.org)
+`🧰 FRAMEWORK` : [Pyrogram](https://github.com/pyrogram/pyrogram)
+`💾 DATABASE` : [MongoDB](https://cloud.mongodb.com)
+`🌀 𝚂𝙴𝚁𝚅𝙴𝚁` : VPS
+`📢 Support` : [TGNVS](https:/t.me/tgnvs)
 
 I have lots of features, such as 
 
@@ -160,18 +178,25 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 USER_ABOUT_MESSAGE = """
-- Shortener Website: DTGLINKS.IN
-- Method: {method}
-- DTGLINKS.IN API: {shortener_api}
-- Mdisk API: {mdisk_api}
-- Username: @{username}
-- Header Text: 
+🔧 Here are the current settings for this bot:
+
+- 🌐 Shortener website: {base_site}
+
+- 🧰 Method: {method}
+
+- 🔌 {base_site} API: {shortener_api}
+
+- 💾 Mdisk API: {mdisk_api}
+
+- 📎 Username: @{username}
+
+- 📝 Header text:
 {header_text}
 
-- Footer Text: 
+- 📝 Footer text:
 {footer_text}
 
-- Banner Image: {banner_image}
+🖼️ Banner image: {banner_image}
 """
 
 
