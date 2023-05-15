@@ -45,6 +45,7 @@ Helpful commands:
 - /batch -100xxx: To short or convert all posts of your channel
 - /shortener_api : add your nanolinks api
 - /mdisk_api : add mdisk api
+- /base_site : Change bast site
 - /header : add header
 - /footer : add footer
 - /include_domain
