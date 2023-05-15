@@ -36,6 +36,9 @@ Helpful commands:
 - /mdisk_api : add mdisk api
 - /header : add header
 - /footer : add footer
+- /include_domain
+- /exclude_domain
+- /info
 - /username
 - /banner_image
 - /me
