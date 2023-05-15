@@ -90,6 +90,7 @@ class Bot(Client):
         app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"
+        PORT = 8080
         await web.TCPSite(app, bind_address, PORT).start()
         await broadcast_admins(self, '** Bot started successfully **')
         logging.info('Bot started')
