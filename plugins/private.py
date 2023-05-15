@@ -34,7 +34,6 @@ async def private_link_handler(c: Client, message: Message):
             await update_stats(message, user_method)
             bin_caption = f"""{caption}
 
-#NewPost
 From User :- {message.from_user.mention} [`{message.from_user.id}`]"""
 
             try:
