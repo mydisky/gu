@@ -6,7 +6,8 @@ import sys
 
 from pyrogram import Client
 from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate
-
+from aiohttp import web
+from plugins.web_support import web_server
 from config import *
 from database import db
 from database.users import filter_users
@@ -86,6 +87,10 @@ class Bot(Client):
         async for user in banned_users:
             temp.BANNED_USERS.append(user["user_id"])
         logging.info(LOG_STR)
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()
         await broadcast_admins(self, '** Bot started successfully **')
         logging.info('Bot started')
 
